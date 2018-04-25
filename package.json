@@ -1,0 +1,16 @@
+{
+  "name": "burguer",
+  "version": "0.0.1",
+  "description": "burguer",
+  "main": "lib/index.js",
+  "repository": "https://github.com/marcosbozzani/burguer",
+  "author": "marcosbozzani",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "yarn.lock"
+  ],
+  "devDependencies": {
+    "semantic-release": "^15.1.7"
+  }
+}
