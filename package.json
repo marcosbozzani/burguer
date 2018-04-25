@@ -10,6 +10,9 @@
     "lib",
     "yarn.lock"
   ],
+  "scripts": {
+    "test": "echo testing"
+  },
   "devDependencies": {
     "semantic-release": "^15.1.7"
   }
