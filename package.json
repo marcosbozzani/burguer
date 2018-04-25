@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "burguer",
   "main": "lib/index.js",
-  "repository": "https://github.com/marcosbozzani/burguer",
+  "repository": "https://github.com/marcosbozzani/burguer.git",
   "author": "marcosbozzani",
   "license": "MIT",
   "files": [
