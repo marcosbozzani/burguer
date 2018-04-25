@@ -1,6 +1,6 @@
 {
   "name": "burguer",
-  "version": "0.0.1",
+  "version": "0.0.0-dev",
   "description": "burguer",
   "main": "lib/index.js",
   "repository": "https://github.com/marcosbozzani/burguer.git",
@@ -11,7 +11,19 @@
     "yarn.lock"
   ],
   "scripts": {
-    "test": "echo testing"
+    "test": "echo ready!"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog", 
+      "@semantic-release/npm", 
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      "@semantic-release/changelog", 
+      "@semantic-release/npm", 
+      "@semantic-release/git"
+    ]
   },
   "devDependencies": {
     "semantic-release": "^15.1.7"
