@@ -1,3 +1,11 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/marcosbozzani/burguer/compare/v1.0.2...v1.1.0) (2018-05-01)
+
+
+### Features
+
+* add lib and cli ([812aad7](https://github.com/marcosbozzani/burguer/commit/812aad7))
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/marcosbozzani/burguer/compare/v1.0.1...v1.0.2) (2018-04-25)
 
