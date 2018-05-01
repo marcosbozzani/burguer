@@ -1,3 +1,11 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/marcosbozzani/burguer/compare/v1.1.0...v1.1.1) (2018-05-01)
+
+
+### Bug Fixes
+
+* add hashbang to cli script ([b42360a](https://github.com/marcosbozzani/burguer/commit/b42360a))
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/marcosbozzani/burguer/compare/v1.0.2...v1.1.0) (2018-05-01)
 
