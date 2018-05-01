@@ -7,11 +7,12 @@
   "author": "marcosbozzani",
   "license": "MIT",
   "files": [
+    "bin",
     "lib",
     "yarn.lock"
   ],
   "bin": {
-    "burguer": "lib/cli.js"
+    "burguer": "bin/index.js"
   },
   "scripts": {
     "test": "echo ready!"
