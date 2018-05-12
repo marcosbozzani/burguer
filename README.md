@@ -91,9 +91,9 @@ Burguer.push(local: String, remote?: String): Promise
 
 Burguer.pull(remote: String, local?: String): Promise
 
-Burguer.local(command: String, cwd?: String): Promise<BurguerResult>
+Burguer.local(command: String, options?: { cwd?: String, exitCode?: Number }): Promise<BurguerResult>
 
-Burguer.remote(command: String, cwd?: String): Promise<BurguerResult>
+Burguer.remote(command: String, options?: { cwd?: String, exitCode?: Number }): Promise<BurguerResult>
 
 BuguerConfig = {
   local: String,
@@ -101,10 +101,10 @@ BuguerConfig = {
   host: String,
   username: String,
   privateKey: String,
-  stdout?: Function,
-  stderr?: Function,
-  localShell?: String,
-  remoteShell?: String
+  stdout: Function,
+  stderr: Function,
+  localShell: String,
+  remoteShell: String
 }
 
 BurguerResult = {
