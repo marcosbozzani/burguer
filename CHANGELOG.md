@@ -1,3 +1,11 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/marcosbozzani/burguer/compare/v1.2.0...v1.2.1) (2018-05-12)
+
+
+### Bug Fixes
+
+* validate exit code for 'remote' and 'local' commands ([1529993](https://github.com/marcosbozzani/burguer/commit/1529993))
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/marcosbozzani/burguer/compare/v1.1.2...v1.2.0) (2018-05-12)
 
