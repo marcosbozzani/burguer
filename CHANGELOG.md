@@ -1,3 +1,11 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/marcosbozzani/burguer/compare/v1.1.2...v1.2.0) (2018-05-12)
+
+
+### Features
+
+* validate config only when the commands need ([c8b0ecd](https://github.com/marcosbozzani/burguer/commit/c8b0ecd))
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/marcosbozzani/burguer/compare/v1.1.1...v1.1.2) (2018-05-01)
 
