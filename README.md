@@ -81,32 +81,63 @@ node deploy.js
 ## API
 
 ``` js
+// description: create a new Burguer instance
 Burguer(config: BuguerConfig): Burguer
 
+// description: connect to the ssh server
 // requires: BuguerConfig.host, BuguerConfig.username, BuguerConfig.privateKey 
 Burguer.connect(): Promise
 
+// description: disconnect from the ssh server
 // requires: Buguer.connect()
 Burguer.disconnect()
 
+// description: push a file from the local cwd to the remote cwd
 // requires: Buguer.connect(), BurguerConfig.local, BurguerConfig.remote
+// params:
+//  - local: path relative to the local cwd (current working directory)
+//  - remote: path relative to the remote cwd (current working directory). Same as local, if not set
 Burguer.push(local: String, remote?: String): Promise
 
+// description: pull a file from the remote cwd to the local cwd
 // requires: Buguer.connect(), BurguerConfig.local, BurguerConfig.remote
+// params:
+//  - remote: path relative to the remote cwd (current working directory)
+//  - local: path relative to the local cwd (current working directory). Same as remote, if not set
 Burguer.pull(remote: String, local?: String): Promise
 
+// description: execute a command in the local shell
 // requires: BurguerConfig.local
 // optional: BurguerConfig.localShell, BurguerConfig.localShellArgs
+// params:
+//  - command: the command path and arguments. e.g. echo hello world
+//  - options:
+//    - cwd: current working directory
+//    - exitCode: the command expected exit code. default: 0
+// returns: stdout, stderr and exit code from the command
 Burguer.local(command: String, options?: { cwd?: String, exitCode?: Number }): Promise<BurguerResult>
 
+// description: change the local cwd (current working directory)
+Burguer.local.cd(path: String)
+
+// description: execute a command in the remote shell
 // requires: Buguer.connect(), BurguerConfig.remote
 // optional: BurguerConfig.remoteShell, BurguerConfig.remoteShellArgs
+// params:
+//  - command: the command path and arguments. e.g. echo hello world
+//  - options:
+//    - cwd: current working directory
+//    - exitCode: the command expected exit code. default: 0
+// returns: stdout, stderr and exit code from the command
 Burguer.remote(command: String, options?: { cwd?: String, exitCode?: Number }): Promise<BurguerResult>
+
+// description: change the remote cwd (current working directory)
+Burguer.remote.cd(path: String)
 
 BuguerConfig = {
   // absolute or relative local project root path. e.g.: c:\project or ~/project or .
   local: String, 
-  // absolute remote project root path. e.g.: /var/www/project
+  // absolute or relative remote project root path. e.g.: /var/www/project or ~/project or .
   remote: String, 
   // hostname or ip. e.g.: my-hostname.com or 192.168.0.100
   host: String, 
