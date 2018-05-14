@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/marcosbozzani/burguer/compare/v1.2.1...v1.3.0) (2018-05-14)
+
+
+### Features
+
+* add commands to change local and remote current directory ([e8aaa0f](https://github.com/marcosbozzani/burguer/commit/e8aaa0f))
+* add config for local and remote shell args ([71f57cf](https://github.com/marcosbozzani/burguer/commit/71f57cf))
+* add ssh password login support ([29e4fe5](https://github.com/marcosbozzani/burguer/commit/29e4fe5))
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/marcosbozzani/burguer/compare/v1.2.0...v1.2.1) (2018-05-12)
 
