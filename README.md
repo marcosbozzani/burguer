@@ -141,8 +141,10 @@ BuguerConfig = {
   remote: String, 
   // hostname or ip. e.g.: my-hostname.com or 192.168.0.100
   host: String, 
-  // ssh username to access the remote
+  // ssh username to access the remote. Must be used with password or privateKey, not both
   username: String, 
+  // ssh password to access the remote
+  password: String, 
   // absolute or relative path to the ssh private key. e.g.: c:\privatekey or ~/.ssh/privatekey
   privateKey: String, 
   // function called when an output is available. default: console.log
