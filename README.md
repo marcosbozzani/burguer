@@ -83,28 +83,49 @@ node deploy.js
 ``` js
 Burguer(config: BuguerConfig): Burguer
 
+// requires: BuguerConfig.host, BuguerConfig.username, BuguerConfig.privateKey 
 Burguer.connect(): Promise
 
+// requires: Buguer.connect()
 Burguer.disconnect()
 
+// requires: Buguer.connect(), BurguerConfig.local, BurguerConfig.remote
 Burguer.push(local: String, remote?: String): Promise
 
+// requires: Buguer.connect(), BurguerConfig.local, BurguerConfig.remote
 Burguer.pull(remote: String, local?: String): Promise
 
+// requires: BurguerConfig.local
+// optional: BurguerConfig.localShell, BurguerConfig.localShellArgs
 Burguer.local(command: String, options?: { cwd?: String, exitCode?: Number }): Promise<BurguerResult>
 
+// requires: Buguer.connect(), BurguerConfig.remote
+// optional: BurguerConfig.remoteShell, BurguerConfig.remoteShellArgs
 Burguer.remote(command: String, options?: { cwd?: String, exitCode?: Number }): Promise<BurguerResult>
 
 BuguerConfig = {
-  local: String,
-  remote: String,
-  host: String,
-  username: String,
-  privateKey: String,
+  // absolute or relative local project root path. e.g.: c:\project or ~/project or .
+  local: String, 
+  // absolute remote project root path. e.g.: /var/www/project
+  remote: String, 
+  // hostname or ip. e.g.: my-hostname.com or 192.168.0.100
+  host: String, 
+  // ssh username to access the remote
+  username: String, 
+  // absolute or relative path to the ssh private key. e.g.: c:\privatekey or ~/.ssh/privatekey
+  privateKey: String, 
+  // function called when an output is available. default: console.log
   stdout: Function,
+  // function called when an error is available. default: console.error
   stderr: Function,
+  // shell for local commands. e.g.: powershell.exe or /bin/bash.
   localShell: String,
+  // arguments for the local shell. e.g.: '-c' or [ '/s', '/k' ]
+  localShellArgs: String | String[],
+  // shell for remote commands. e.g.: powershell.exe or /bin/bash.
   remoteShell: String
+  // arguments for the remote shell. e.g.: '-c' or [ '/s', '/k' ]
+  remoteShellArgs: String | String[]
 }
 
 BurguerResult = {
