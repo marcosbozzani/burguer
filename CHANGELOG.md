@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/marcosbozzani/burguer/compare/v1.3.1...v1.3.2) (2019-07-15)
+
+
+### Bug Fixes
+
+* **deps:** resolve lodash to ^4.17.13 ([1a68c84](https://github.com/marcosbozzani/burguer/commit/1a68c84))
+
 ## [1.3.1](https://github.com/marcosbozzani/burguer/compare/v1.3.0...v1.3.1) (2019-07-05)
 
 

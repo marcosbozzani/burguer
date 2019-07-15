@@ -1,6 +1,6 @@
 {
   "name": "burguer",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "burguer",
   "main": "lib/index.js",
   "repository": "https://github.com/marcosbozzani/burguer.git",
