@@ -1,3 +1,11 @@
+## [1.3.3](https://github.com/marcosbozzani/burguer/compare/v1.3.2...v1.3.3) (2020-05-23)
+
+
+### Bug Fixes
+
+* bump nodejs from 8 to 10 ([474184f](https://github.com/marcosbozzani/burguer/commit/474184fefc19448b75dbaee56d6fc4c49079630c))
+* minimist security alert ([745a204](https://github.com/marcosbozzani/burguer/commit/745a204aa613bc226ddec4675a0393d71c8e7035))
+
 ## [1.3.2](https://github.com/marcosbozzani/burguer/compare/v1.3.1...v1.3.2) (2019-07-15)
 
 
