@@ -29,6 +29,9 @@
       "@semantic-release/git"
     ]
   },
+  "resolutions": {
+    "lodash": "^4.17.19"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
@@ -37,8 +40,5 @@
   "dependencies": {
     "js-yaml": "^3.11.0",
     "ssh2": "^0.8.4"
-  },
-  "resolutions": {
-    "lodash": "^4.17.19"
   }
 }
