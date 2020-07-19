@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/marcosbozzani/burguer/compare/v1.3.3...v1.3.4) (2020-07-19)
+
+
+### Bug Fixes
+
+* **deps:** bump lodash ([cd6a248](https://github.com/marcosbozzani/burguer/commit/cd6a248ee2405fbfa853f5239722075604a9948c))
+
 ## [1.3.3](https://github.com/marcosbozzani/burguer/compare/v1.3.2...v1.3.3) (2020-05-23)
 
 
