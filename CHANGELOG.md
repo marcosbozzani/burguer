@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/marcosbozzani/burguer/compare/v1.3.4...v1.3.5) (2020-07-30)
+
+
+### Bug Fixes
+
+* **deps:** dot-prop ([b55cd65](https://github.com/marcosbozzani/burguer/commit/b55cd65d7cd7d7dc505939934ea47bda11f9e8a0))
+
 ## [1.3.4](https://github.com/marcosbozzani/burguer/compare/v1.3.3...v1.3.4) (2020-07-19)
 
 
