@@ -30,7 +30,8 @@
     ]
   },
   "resolutions": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.19",
+    "dot-prop": "^5.1.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
