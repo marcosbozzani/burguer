@@ -1,8 +1,18 @@
 language: node_js
 node_js:
   - 10
+
 deploy:
- provider: script
+ provider: npm
+ email: marcosbozzani@gmail.com
+ api_key: $NPM_TOKEN
  skip_cleanup: true
- script:
-   - yarn semantic-release
+ on.tags: true
+
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  file: bin\index.js
+  file: lib\index.js
+  skip_cleanup: true
+  on.tags: true
