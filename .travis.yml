@@ -3,18 +3,11 @@ node_js:
   - 10
 
 deploy:
-  - provider: npm
-    email: $NPM_EMAIL
-    api_key: $NPM_TOKEN
-    skip_cleanup: true
-    on:
-      tags: true
-
   - provider: releases
     api_key: $GH_TOKEN
     file: 
-      - bin\index.js
-      - lib\index.js
+      - bin/index.js
+      - lib/index.js
     skip_cleanup: true
     on:
       tags: true
